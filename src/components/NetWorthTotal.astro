@@ -1,0 +1,13 @@
+---
+interface Props {
+	total: number;
+}
+
+const { total } = Astro.props;
+---
+
+<div class="p-5 mx-[10%] w-8/10 bg-gradient-to-bl from-indigo-200 to-yellow-100 flex justify-center flex-col">
+	<h2 class="text-center text-slate-500">Current Total Net Worth</h2>
+	<p class="text-center text-green-600/75 text-5xl m-3">£{total}</p>
+</div>
+
